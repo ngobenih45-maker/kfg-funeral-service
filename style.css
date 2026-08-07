@@ -2204,3 +2204,199 @@ h3 {
     }
 
 }
+/* =========================================================
+   KFG FINAL FIXES
+   ========================================================= */
+
+/* Make sure the entire page can scroll */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Never allow the header/hero to lock the page */
+.site-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Keep hero inside the screen */
+.hero {
+    width: 100%;
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+/* Prevent very large heading from going outside screen */
+.hero h1 {
+    max-width: 950px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.hero-copy {
+    max-width: 650px;
+}
+
+/* Desktop */
+@media (min-width: 951px) {
+
+    .hero-content {
+        padding-left: 0;
+        padding-right: 300px;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 90px 0 100px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        width: 90%;
+        padding: 80px 0 90px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 12vw, 52px);
+        line-height: 1.05;
+        letter-spacing: -1px;
+        max-width: 100%;
+    }
+
+    .hero-copy {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .hero-glow {
+        width: 300px;
+        height: 300px;
+        right: -180px;
+        top: 10%;
+    }
+
+    .hero-ornament {
+        right: 5%;
+        bottom: 20px;
+        font-size: 60px;
+    }
+}
+
+
+/* =========================================================
+   FORCE CONTENT TO DISPLAY
+   ========================================================= */
+
+main {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.trust-strip,
+.section,
+footer {
+    position: relative;
+    display: block;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION SAFETY
+   ========================================================= */
+
+/*
+   If JavaScript fails, don't leave the website invisible.
+*/
+.reveal {
+    opacity: 1;
+    transform: none;
+}
+
+/*
+   JavaScript will add this when animation is available.
+*/
+.js-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.js-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .nav {
+        position: relative;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+
+    .nav-links {
+        z-index: 100;
+
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+    }
+
+}
+
+
+/* =========================================================
+   BUTTON SAFETY
+   ========================================================= */
+
+.btn {
+    cursor: pointer;
+    user-select: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   WHATSAPP
+   ========================================================= */
+
+.wa-enquire {
+    cursor: pointer;
+}
