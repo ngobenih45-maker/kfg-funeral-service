@@ -995,3 +995,505 @@ footer {
         justify-content: center;
     }
 }
+/* ==========================================
+   KFG JOIN PAGE
+========================================== */
+
+.join-header{
+    position:relative;
+    background:#0B2D6B;
+    padding:18px 7%;
+    z-index:100;
+}
+
+.join-navbar{
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.join-logo{
+    color:#fff;
+    font-family:"Cinzel",serif;
+    font-size:24px;
+    font-weight:700;
+}
+
+.back-home{
+    color:#fff;
+    border:1px solid rgba(255,255,255,.5);
+    padding:10px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.back-home:hover{
+    background:#D4AF37;
+    color:#111;
+}
+
+
+/* ==========================================
+   JOIN HERO
+========================================== */
+
+.join-hero{
+    position:relative;
+    min-height:520px;
+
+    background:
+    linear-gradient(
+        rgba(11,45,107,.65),
+        rgba(0,0,0,.65)
+    ),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:#fff;
+}
+
+.join-hero-content{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:850px;
+}
+
+.small-title{
+    color:#D4AF37;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.join-hero h1{
+    font-family:"Cinzel",serif;
+    font-size:65px;
+    margin:15px 0;
+}
+
+.join-hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.hero-badge{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 25px;
+    border-radius:40px;
+    background:#D4AF37;
+    color:#111;
+    font-weight:700;
+}
+
+.hero-badge i{
+    margin-right:8px;
+}
+
+
+/* ==========================================
+   COVER SECTION
+========================================== */
+
+.cover-section{
+    background:#f7f8fb;
+    padding:100px 0;
+}
+
+.join-container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.join-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.join-title span{
+    color:#D4AF37;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.join-title h2{
+    font-family:"Cinzel",serif;
+    font-size:42px;
+    color:#0B2D6B;
+    margin:10px 0;
+}
+
+.join-title p{
+    color:#666;
+}
+
+
+/* ==========================================
+   COVER CARDS
+========================================== */
+
+.cover-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.cover-card{
+    position:relative;
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.10);
+
+    transition:.4s;
+}
+
+.cover-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.18);
+}
+
+.featured-cover{
+    border:3px solid #D4AF37;
+}
+
+.popular-label{
+    position:absolute;
+    top:0;
+    right:0;
+
+    background:#D4AF37;
+    color:#111;
+
+    padding:8px 18px;
+
+    border-radius:
+    0 20px 0 20px;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.cover-icon{
+    width:70px;
+    height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#0B2D6B;
+    color:#D4AF37;
+
+    border-radius:50%;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+}
+
+.cover-card h3{
+    font-family:"Cinzel",serif;
+    color:#0B2D6B;
+    font-size:28px;
+}
+
+.age{
+    color:#777;
+    font-size:14px;
+    margin:8px 0 20px;
+}
+
+.price-list{
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+
+    padding:15px 0;
+    margin-bottom:20px;
+}
+
+.price-list p{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+
+    margin:10px 0;
+    color:#444;
+}
+
+.price-list strong{
+    color:#0B2D6B;
+}
+
+.cover-card ul{
+    margin-bottom:25px;
+}
+
+.cover-card li{
+    margin:12px 0;
+    color:#555;
+}
+
+.cover-card li i{
+    color:#D4AF37;
+    margin-right:8px;
+}
+
+.select-cover{
+    width:100%;
+
+    border:none;
+
+    background:#D4AF37;
+    color:#111;
+
+    padding:15px;
+
+    border-radius:40px;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.select-cover:hover{
+    background:#0B2D6B;
+    color:#fff;
+}
+
+
+/* ==========================================
+   APPLICATION
+========================================== */
+
+.application{
+    background:#fff;
+    padding:100px 0;
+}
+
+.application-box{
+    max-width:950px;
+    margin:auto;
+
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:600;
+    color:#0B2D6B;
+    margin-bottom:8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#D4AF37;
+}
+
+.submit-application{
+    width:100%;
+
+    border:none;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:17px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.submit-application:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.submit-application i{
+    margin-right:8px;
+}
+
+
+/* ==========================================
+   INFORMATION
+========================================== */
+
+.join-info{
+    background:#0B2D6B;
+    color:#fff;
+    padding:80px 0;
+}
+
+.info-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    text-align:center;
+}
+
+.info-grid > div{
+    padding:25px;
+}
+
+.info-grid i{
+    font-size:45px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.info-grid h3{
+    font-family:"Cinzel",serif;
+    margin-bottom:10px;
+}
+
+.info-grid p{
+    color:rgba(255,255,255,.8);
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.join-footer{
+    background:#071b42;
+    color:#fff;
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+.join-footer h2{
+    font-family:"Cinzel",serif;
+    color:#D4AF37;
+}
+
+.join-footer p{
+    margin:10px 0;
+    color:rgba(255,255,255,.8);
+}
+
+.footer-line{
+    width:100%;
+    max-width:500px;
+    height:1px;
+    background:rgba(255,255,255,.2);
+    margin:30px auto;
+}
+
+.designer strong{
+    color:#D4AF37;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:700px){
+
+    .join-navbar{
+        gap:15px;
+    }
+
+    .join-logo{
+        font-size:18px;
+    }
+
+    .back-home{
+        padding:8px 14px;
+        font-size:13px;
+    }
+
+    .join-hero{
+        min-height:450px;
+    }
+
+    .join-hero h1{
+        font-size:42px;
+    }
+
+    .join-hero p{
+        font-size:16px;
+    }
+
+    .join-title h2{
+        font-size:32px;
+    }
+
+    .application-box{
+        padding:25px 20px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+}
