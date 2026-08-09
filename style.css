@@ -1789,3 +1789,22 @@ footer {
     }
 
 }
+.emergency-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:#b00020;
+    color:#fff;
+    padding:15px 30px;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 8px 25px rgba(176,0,32,.3);
+    transition:.3s;
+}
+
+.emergency-btn:hover{
+    transform:translateY(-3px);
+    background:#850018;
+}
